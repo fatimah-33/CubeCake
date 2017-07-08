@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.qadheeb.fatimah.cubecake.MainActivity"
+    android:background="#f9f4f4"
+
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="Cube Cake is a store for selling yummy cakes. You can search for your favorite kind and order it easily."
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/InfoText"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#f7eaf1"
+        android:layout_alignTop="@+id/infoImg"
+        android:layout_alignStart="@+id/contactImg"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:text="Call au for suggestion or any farther info +996000000000. Or visit us in Alhasa-Alhufof we open at 4:00pm "
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactText"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#f7eaf1"
+        android:textAlignment="center"
+        android:layout_below="@+id/contactImg"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/info"
+        android:layout_marginTop="18dp"
+        android:id="@+id/infoImg"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/InfoText"
+        android:layout_marginStart="11dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/contact"
+        android:layout_marginTop="19dp"
+        android:id="@+id/contactImg"
+        android:layout_marginStart="27dp"
+        android:layout_below="@+id/InfoText"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Follow us:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/follow"
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/contactText"
+        android:layout_alignStart="@+id/contactImg"
+        android:background="#E7C9CF"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/twitter"
+        android:id="@+id/twitterImg"
+        android:layout_alignTop="@+id/instaImg"
+        android:layout_toEndOf="@+id/follow" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/instagram"
+        android:id="@+id/instaImg"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/follow"
+        android:layout_alignStart="@+id/follow"
+        android:layout_marginStart="21dp" />
+
+</RelativeLayout>
